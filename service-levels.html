@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Level Agreement & Transparency | Transparency Medical Billing</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Custom styles specifically for this page's tables and report card -->
+    <style>
+        .transparency-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+        }
+        .transparency-table th, .transparency-table td {
+            padding: 15px 20px;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+        .transparency-table th {
+            background-color: var(--navy);
+            color: white;
+            font-weight: 600;
+            font-family: var(--body-font);
+        }
+        .transparency-table tr:last-child td {
+            border-bottom: none;
+        }
+        .transparency-table tr:nth-child(even) {
+            background-color: var(--background);
+        }
+        .transparency-table td:first-child {
+            font-weight: 700;
+            color: var(--teal);
+            width: 100px;
+        }
+
+        /* Styling for the Sample Report Card */
+        .sample-report-box {
+            background: var(--navy);
+            color: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            position: relative;
+            overflow: hidden;
+        }
+        .sample-report-box::before {
+            content: '';
+            position: absolute;
+            top: -50%; left: -50%; width: 200%; height: 200%;
+            background: radial-gradient(circle, rgba(22, 143, 136, 0.15) 0%, transparent 60%);
+            z-index: 1;
+        }
+        .sample-report-box > * { position: relative; z-index: 2; }
+        .sample-report-box h4 {
+            color: var(--teal-light);
+            margin-bottom: 25px;
+            font-size: 1.3rem;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            padding-bottom: 15px;
+        }
+        .report-line {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+            font-size: 1.05rem;
+        }
+        .report-line span:first-child { color: #bdcbd2; }
+        .report-line span:last-child { font-weight: 600; }
+        .report-total {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 20px;
+            margin-top: 20px;
+            font-size: 1.2rem;
+            color: var(--teal-light);
+        }
+        
+        .value-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .value-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            font-size: 1.05rem;
+        }
+        .value-list li i {
+            color: var(--teal);
+            margin-top: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header" id="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="logo.jpg" alt="TM Billing Logo">
+                <div class="logo-text">
+                    <strong>Transparency</strong>
+                    <span>Medical Billing</span>
+                </div>
+            </a>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation" aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <nav class="nav-links" id="nav-links">
+                <a href="index.html#home">Home</a>
+                <a href="index.html#about">About Us</a>
+                <a href="index.html#services">Services</a>
+                <a href="index.html#why-us">Why Choose Us</a>
+                <a href="index.html#contact" class="nav-contact">Contact Us</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT: SERVICE LEVELS PAGE -->
+    <section class="section" style="padding-top: 150px; padding-bottom: 100px; background-color: var(--background); min-height: 80vh;">
+        <div class="container">
+            
+            <!-- PAGE HEADER -->
+            <div class="section-heading" style="margin-bottom: 40px;">
+                <span class="section-label">OUR COMMITMENT TO YOU</span>
+                <h2>Transparency & Service Level Agreement</h2>
+                <p>Medical billing should never be a mystery. With us, you will always see your money clearly. We hold ourselves to strict timelines and absolute transparency.</p>
+            </div>
+
+            <!-- SECTION 1: SERVICE LEVELS & WORKING HOURS -->
+            <div class="text-card" style="max-width: 900px; margin: 0 auto 40px auto; background: white;">
+                <h3 style="color: var(--navy); margin-bottom: 25px; font-size: 1.5rem; border-bottom: 2px solid var(--border); padding-bottom: 15px;">
+                    <i class="fa-solid fa-clock" style="color: var(--teal); margin-right: 10px;"></i> Service Levels We Guarantee
+                </h3>
+                
+                <ul class="custom-list" style="gap: 25px; margin-bottom: 40px;">
+                    <li><i class="fa-solid fa-stopwatch" style="margin-top: 8px;"></i> <div><strong>Claims submitted:</strong> Within 24 hours of receipt of complete notes.</div></li>
+                    <li><i class="fa-solid fa-stopwatch" style="margin-top: 8px;"></i> <div><strong>Rejections actioned:</strong> Within 30 days.</div></li>
+                    <li><i class="fa-solid fa-stopwatch" style="margin-top: 8px;"></i> <div><strong>Patient queries answered:</strong> Within 24 working hours.</div></li>
+                    <li><i class="fa-solid fa-stopwatch" style="margin-top: 8px;"></i> <div><strong>Monthly reports delivered:</strong> By the 7th working day of the following month.</div></li>
+                </ul>
+
+                <h3 style="color: var(--navy); margin-bottom: 25px; font-size: 1.5rem; border-bottom: 2px solid var(--border); padding-bottom: 15px;">
+                    <i class="fa-regular fa-calendar-check" style="color: var(--teal); margin-right: 10px;"></i> Working Hours
+                </h3>
+                
+                <ul class="custom-list">
+                    <li><i class="fa-solid fa-calendar-days" style="margin-top: 8px;"></i> <div><strong>Monday to Friday:</strong> 9:00 - 17:00</div></li>
+                    <li><i class="fa-solid fa-calendar-xmark" style="margin-top: 8px;"></i> <div><strong>Saturday, Sunday & Public Holidays:</strong> Closed</div></li>
+                </ul>
+            </div>
+
+            <!-- SECTION 2: TRANSPARENCY FOR PATIENTS -->
+            <div class="text-card" style="max-width: 900px; margin: 0 auto 40px auto; background: white;">
+                <h3 style="color: var(--navy); margin-bottom: 15px; font-size: 1.5rem;">
+                    <i class="fa-solid fa-users" style="color: var(--teal); margin-right: 10px;"></i> Transparency For Patients
+                </h3>
+                <p style="color: var(--muted); margin-bottom: 25px;">Your patients will receive billing that is easy to understand and fair.</p>
+                
+                <div style="display: grid; gap: 25px;">
+                    <div>
+                        <h4 style="color: var(--navy); margin-bottom: 5px;">1. Upfront Estimates</h4>
+                        <p style="color: var(--muted); font-size: 0.95rem; margin-bottom: 8px;">Before treatment, where possible, patients receive a written estimate showing:</p>
+                        <ul class="custom-list" style="gap: 10px; font-size: 0.95rem;">
+                            <li><i class="fa-solid fa-check" style="color: var(--teal);"></i> Treatment planned</li>
+                            <li><i class="fa-solid fa-check" style="color: var(--teal);"></i> Expected medical aid payment</li>
+                            <li><i class="fa-solid fa-check" style="color: var(--teal);"></i> Expected patient co-payment</li>
+                        </ul>
+                        <p style="color: var(--navy); font-weight: 600; margin-top: 10px;"><em>No surprise bills.</em></p>
+                    </div>
+
+                    <div>
+                        <h4 style="color: var(--navy); margin-bottom: 5px;">2. Clear Patient Statements</h4>
+                        <p style="color: var(--muted); font-size: 0.95rem; margin-bottom: 8px;">Patient statements show:</p>
+                        <ul class="custom-list" style="gap: 10px; font-size: 0.95rem;">
+                            <li><i class="fa-solid fa-check" style="color: var(--teal);"></i> Date of treatment</li>
+                            <li><i class="fa-solid fa-check" style="color: var(--teal);"></i> Treatment description and codes</li>
+                            <li><i class="fa-solid fa-check" style="color: var(--teal);"></i> Amount billed</li>
+                            <li><i class="fa-solid fa-check" style="color: var(--teal);"></i> Amount paid by medical aid</li>
+                            <li><i class="fa-solid fa-check" style="color: var(--teal);"></i> Amount owed by patient - and why</li>
+                        </ul>
+                        <p style="color: var(--navy); font-weight: 600; margin-top: 10px;"><em>We use plain language, not just codes.</em></p>
+                    </div>
+
+                    <div>
+                        <h4 style="color: var(--navy); margin-bottom: 5px;">3. Professional Query Handling</h4>
+                        <p style="color: var(--muted); font-size: 0.95rem;">Patient billing queries are answered within 24 working hours, with a full explanation and supporting documents where needed.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SECTION 3: TRANSPARENCY RULES -->
+            <div class="text-card" style="max-width: 900px; margin: 0 auto 40px auto; background: white;">
+                <h3 style="color: var(--navy); margin-bottom: 20px; font-size: 1.5rem;">
+                    <i class="fa-solid fa-scale-balanced" style="color: var(--teal); margin-right: 10px;"></i> Our Transparency Rules
+                </h3>
+                <p style="color: var(--muted); margin-bottom: 20px;">We commit to the following non-negotiable rules:</p>
+                
+                <div style="overflow-x: auto;">
+                    <table class="transparency-table">
+                        <thead>
+                            <tr>
+                                <th>Rule</th>
+                                <th>Our Commitment</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Rule 1</td>
+                                <td>Fee is calculated on collected amounts only, and shown in full.</td>
+                            </tr>
+                            <tr>
+                                <td>Rule 2</td>
+                                <td>Monthly reports delivered on the same date every month.</td>
+                            </tr>
+                            <tr>
+                                <td>Rule 3</td>
+                                <td>No write-offs without provider written approval.</td>
+                            </tr>
+                            <tr>
+                                <td>Rule 4</td>
+                                <td>Every claim, payment, and adjustment is documented.</td>
+                            </tr>
+                            <tr>
+                                <td>Rule 5</td>
+                                <td>Provider and patient information is kept confidential under POPIA.</td>
+                            </tr>
+                            <tr>
+                                <td>Rule 6</td>
+                                <td>Rejections are actioned within 48 hours and reported monthly.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- SECTION 4: SAMPLE MONTHLY REPORT (Centered & Clean) -->
+            <div style="max-width: 800px; margin: 0 auto 50px auto;">
+                <div style="text-align: center; margin-bottom: 30px;">
+                    <h3 style="color: var(--navy); font-size: 1.5rem; margin-bottom: 10px;">
+                        <i class="fa-solid fa-file-invoice" style="color: var(--teal); margin-right: 10px;"></i> Sample Monthly Report
+                    </h3>
+                    <p style="color: var(--muted);">See exactly what your monthly report will look like. We provide a detailed breakdown every single month.</p>
+                </div>
+                
+                <!-- Mock Report Card -->
+                <div class="sample-report-box">
+                    <h4>Monthly Billing Report</h4>
+                    <div class="report-line">
+                        <span>Provider:</span>
+                        <span>Dr. Example</span>
+                    </div>
+                    <div class="report-line">
+                        <span>Practice No:</span>
+                        <span>0123456</span>
+                    </div>
+                    <div class="report-line">
+                        <span>Month:</span>
+                        <span>October 2026</span>
+                    </div>
+                    <div class="report-line">
+                        <span>Total Billed:</span>
+                        <span>R250,000.00</span>
+                    </div>
+                    <div class="report-line">
+                        <span>Total Collected:</span>
+                        <span>R210,000.00</span>
+                    </div>
+                    <div class="report-line">
+                        <span>Outstanding:</span>
+                        <span>R145,000.00</span>
+                    </div>
+                    <div class="report-line report-total">
+                        <span>Bureau Fee (6%):</span>
+                        <span>R12,600.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SECTION 5: WHY TRANSPARENCY MATTERS -->
+            <div class="text-card" style="max-width: 900px; margin: 0 auto 50px auto; background: white;">
+                <h3 style="color: var(--navy); margin-bottom: 25px; font-size: 1.5rem;">
+                    <i class="fa-solid fa-lightbulb" style="color: var(--teal); margin-right: 10px;"></i> Why Transparency Matters For Your Practice
+                </h3>
+                
+                <ul class="value-list">
+                    <li><i class="fa-solid fa-arrow-trend-up" style="font-size: 1.2rem;"></i> <div><strong style="color: var(--navy);">Faster Payment:</strong> Clear claims and fast follow-up means you get paid sooner.</div></li>
+                    <li><i class="fa-solid fa-shield-halved" style="font-size: 1.2rem;"></i> <div><strong style="color: var(--navy);">Lower Bad Debt:</strong> Age analysis and collections reduce outstanding balances.</div></li>
+                    <li><i class="fa-solid fa-comments" style="font-size: 1.2rem;"></i> <div><strong style="color: var(--navy);">Fewer Disputes:</strong> Patients who understand their bill complain less.</div></li>
+                    <li><i class="fa-solid fa-handshake" style="font-size: 1.2rem;"></i> <div><strong style="color: var(--navy);">More Trust:</strong> Providers who can see their money trust their billing partner.</div></li>
+                    <li><i class="fa-solid fa-sliders" style="font-size: 1.2rem;"></i> <div><strong style="color: var(--navy);">Better Control:</strong> You can make decisions based on accurate numbers.</div></li>
+                </ul>
+            </div>
+
+            <!-- PAGE CALL TO ACTION -->
+            <div style="text-align: center;">
+                <a href="index.html#contact" class="btn btn-primary" style="padding: 15px 30px; font-size: 1.1rem;">Request A Free Billing Assessment</a>
+                <br><br>
+                <a href="index.html" class="text-link"><i class="fa-solid fa-arrow-left"></i> Back to Home</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <a href="index.html" class="footer-logo">
+                <img src="logo.jpg" alt="TM Billing Logo">
+                <div class="footer-logo-text">
+                    <strong>Transparency</strong>
+                    <span>Medical Billing</span>
+                </div>
+            </a>
+            <p>Professional Medical Billing Accounting Bureau.</p>
+            <div class="footer-bottom">
+                <span>&copy; 2026 Transparency Medical Billing. All rights reserved.</span>
+                <a href="#">Back to top ↑</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        const menuToggle = document.getElementById("menu-toggle");
+        const navLinks = document.getElementById("nav-links");
+        const menuIcon = menuToggle.querySelector("i");
+        const header = document.getElementById("header");
+
+        menuToggle.addEventListener("click", () => {
+            const isOpen = navLinks.classList.toggle("active");
+            menuIcon.classList.toggle("fa-bars", !isOpen);
+            menuIcon.classList.toggle("fa-xmark", isOpen);
+            menuToggle.setAttribute("aria-expanded", isOpen);
+        });
+
+        document.querySelectorAll(".nav-links a").forEach(link => {
+            link.addEventListener("click", () => {
+                navLinks.classList.remove("active");
+                menuIcon.classList.remove("fa-xmark");
+                menuIcon.classList.add("fa-bars");
+                menuToggle.setAttribute("aria-expanded", "false");
+            });
+        });
+
+        window.addEventListener("scroll", () => {
+            header.classList.toggle("scrolled", window.scrollY > 20);
+        });
+    </script>
+
+</body>
+</html>
